@@ -51,7 +51,7 @@ http.route({
 
             try {
                 await ctx.runMutation(api.users.syncUser, {
-                    clerk_id: id,
+                    clerkId: id,
                     email,
                     name,
                     image: image_url
@@ -62,6 +62,11 @@ http.route({
             }
         }
 
+
+        return new Response('Webhooks processed successfully', {status: 200});
+
     })
 
 })
+
+export default http;
