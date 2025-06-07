@@ -2,7 +2,10 @@
 import { useUser } from '@clerk/nextjs';
 import React from 'react';
 import Link from 'next/link';
-import { ZapIcon } from 'lucide-react';
+import { DumbbellIcon, HomeIcon, UserIcon, ZapIcon } from 'lucide-react';
+import { Button } from './ui/button';
+
+
 
 const Navbar = () => {
   const { isSignedIn } = useUser();
@@ -21,6 +24,46 @@ const Navbar = () => {
             <span className='text-primary'>ai-</span>fitness
           </span>
         </Link>
+
+        {/* NAVIGATION */}
+        <nav className='flex items-center gap-5'>
+            {isSignedIn ? (
+                <>
+                {/* HOME */}
+                <Link href='/'
+                className='flex items-center gap-1.5 text-sm hover:text-primary transition-colors'
+                >
+                    <HomeIcon size={16} />
+                    <span>Home</span>
+                </Link>
+
+                {/* GENERATE */}
+                <Link href='/generate-program'
+                className='flex items-center gap-1.5 text-sm hover:text-primary transition-colors'
+                >
+                    <DumbbellIcon size={16} />
+                    <span>Generate</span>
+                </Link>
+
+                {/* PROFILE */}
+                <Link href='/profile'
+                className='flex items-center gap-1.5 text-sm hover:text-primary transition-colors'
+                >
+                    <UserIcon size={16} />
+                    <span>Profile</span>
+                </Link>
+
+                {/* BUTTON */}
+                <Button 
+                asChild
+                variant='outline'
+                className='ml-2 border-primary/50 text-primary hover:text-white hover:bg-primary/10'
+                >
+                    <Link href='/generate-program'>Get Started</Link>
+                </Button>
+                </>
+            ) : ()}
+        </nav>
       </div>
     </header>
   );
