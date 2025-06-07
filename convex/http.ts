@@ -64,7 +64,7 @@ http.route({
             // Concatenate first and last names, trim any whitespace
             const name = `${first_name || ''} ${last_name || ''}`.trim();
 
-            return new Response('User created', { status: 200 });
+           
             try {
                 // Call a Convex mutation to store the user info in the database
                 await ctx.runMutation(api.users.syncUser, {
@@ -73,6 +73,7 @@ http.route({
                     name,
                     image: image_url
                 });
+                return new Response('User created and synced to Convex', { status: 200 });
             } catch (error) {
                 // If saving the user fails, log the error and return 500
                 console.log('Error creating user:', error);
