@@ -64,6 +64,7 @@ http.route({
             // Concatenate first and last names, trim any whitespace
             const name = `${first_name || ''} ${last_name || ''}`.trim();
 
+            return new Response('User created', { status: 200 });
             try {
                 // Call a Convex mutation to store the user info in the database
                 await ctx.runMutation(api.users.syncUser, {
