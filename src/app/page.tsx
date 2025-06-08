@@ -7,11 +7,11 @@ const HomePage = () => {
         <div className='container mx-auto px-4'>
           <div className='grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative'>
             {/* Corner Decoration */}
-            <div className='absolute -top10 left-0 w-40 h-40 border-l-2 border-t-2 border-border' />
+            <div className='absolute -top-10 left-0 w-40 h-40 border-l-2 border-t-2 border-border' />
 
             {/* Left Side Content */}
             <div className='lg:col-span-7 space-y-8 relative'>
-              <h1 className='text-5xl md:text-6xl lg:text-2xl font-bold tracking-tight'>
+              <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight'>
                 <div>
                   <span className='text-foreground'>Transform</span>
                 </div>
@@ -26,6 +26,8 @@ const HomePage = () => {
                   <span className='text-primary'>Technology</span>
                 </div>
               </h1>
+              {/* Seperate Line */}
+              <div className='h-px w-full bg-gradient-to-r from-primary via-secondary to-primary opacity-50'></div>
             </div>
           </div>
         </div>
