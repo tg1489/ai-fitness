@@ -1,0 +1,1 @@
+.\minio.exe server C:\Users\tonyg\OneDrive\Desktop\min
