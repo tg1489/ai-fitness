@@ -28,6 +28,10 @@ const HomePage = () => {
               </h1>
               {/* Seperate Line */}
               <div className='h-px w-full bg-gradient-to-r from-primary via-secondary to-primary opacity-50'></div>
+              <p className='text-xl text-muted-foreground w-2/3'>
+                Talk to our AI assistant and get personalized diet plans and
+                workout routines designed just for you
+              </p>
             </div>
           </div>
         </div>
