@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRightIcon } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -80,7 +81,22 @@ const HomePage = () => {
           </div>
 
           {/* RIGHT SIDE CONTENT */}
-          <div className='lg:col-span-5 relative'></div>
+          <div className='lg:col-span-5 relative'>
+            {/* CORNER PIECES */}
+            <div className='absolute -inset-4 pointer-events-none'>
+              <div className='absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-border'></div>
+              <div className='absolute top-0 right-0 w-16 h-16 border-r-2 border-t-2 border-border'></div>
+              <div className='absolute bottom-0 left-0 w-16 h-16 border-l-2 border-b-2 border-border'></div>
+              <div className='absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 border-border'></div>
+            </div>
+          </div>
+
+          {/* IMAGE CONTAINER */}
+          <div className='relative aspect-square max-w-lg mx-auto'>
+            <div className='relative overflow-hidden rounded-lg bg-cyber-black'>
+              <img src='../../public/hero-ai3.png' alt='AI Fitness Coach' />
+            </div>
+          </div>
         </div>
       </section>
     </div>
