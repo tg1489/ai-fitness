@@ -1,3 +1,6 @@
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 import React from 'react';
 
 const HomePage = () => {
@@ -58,6 +61,21 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
+
+              {/* BUTTON */}
+              <Button
+                size='lg'
+                asChild
+                className='overflow-hidden bg-primary text-primary-foreground px-8 py-6 text-lg font-medium'
+              >
+                <Link
+                  href={'/generate-program'}
+                  className='flex items-center font-mono'
+                >
+                  Build Your Program
+                  <ArrowRight className='ml-2 size-5' />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
