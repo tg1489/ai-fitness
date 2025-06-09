@@ -68,20 +68,20 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <SignInButton>
+              <Link href='/sign-in'>
                 <Button
-                  variant={'outline'}
+                  variant='outline'
                   className='border-primary/50 text-primary hover:text-white hover:bg-primary/10'
                 >
                   Sign In
                 </Button>
-              </SignInButton>
+              </Link>
 
-              <SignUpButton>
+              <Link href='/sign-up'>
                 <Button className='bg-primary text-primary-foreground hover:bg-primary/90'>
                   Sign Up
                 </Button>
-              </SignUpButton>
+              </Link>
             </>
           )}
         </nav>

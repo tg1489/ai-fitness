@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, ArrowRightIcon } from 'lucide-react';
+import { ArrowRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 
@@ -12,7 +12,7 @@ const HomePage = () => {
             {/* Corner Decoration */}
             <div className='absolute -top-10 left-0 w-40 h-40 border-l-2 border-t-2 border-border' />
 
-            {/* Left Side Content */}
+            {/* LEFT SIDE CONTENT */}
             <div className='lg:col-span-7 space-y-8 relative'>
               <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight'>
                 <div>
@@ -78,6 +78,9 @@ const HomePage = () => {
               </Button>
             </div>
           </div>
+
+          {/* RIGHT SIDE CONTENT */}
+          <div className='lg:col-span-5 relative'></div>
         </div>
       </section>
     </div>
