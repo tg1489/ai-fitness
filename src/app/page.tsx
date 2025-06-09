@@ -1,3 +1,4 @@
+import TerminalOverlay from '@/components/TerminalOverlay';
 import { Button } from '@/components/ui/button';
 import { ArrowRightIcon } from 'lucide-react';
 import Image from 'next/image';
@@ -27,7 +28,7 @@ const HomePage = () => {
                 </div>
                 <div className='pt-2'>
                   <span className='text-foreground'>AI</span>
-                  <span className='text-primary'>Technology</span>
+                  <span className='text-primary'> Technology</span>
                 </div>
               </h1>
               {/* Seperate Line */}
@@ -115,6 +116,9 @@ const HomePage = () => {
                   <div className='absolute top-0 left-1/2 h-1/4 w-px bg-primary/50' />
                   <div className='absolute bottom-0 left-1/2 h-1/4 w-px bg-primary/50' />
                 </div>
+
+                {/* TERMINAL OVERLAY */}
+                <TerminalOverlay />
               </div>
             </div>
           </div>
