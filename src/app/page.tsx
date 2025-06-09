@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ArrowRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 
@@ -73,7 +73,7 @@ const HomePage = () => {
                   className='flex items-center font-mono'
                 >
                   Build Your Program
-                  <ArrowRight className='ml-2 size-5' />
+                  <ArrowRightIcon className='ml-2 size-5' />
                 </Link>
               </Button>
             </div>
