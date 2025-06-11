@@ -1,4 +1,5 @@
-import TerminalOverlay from '../components/TerminalOverlay.tsx';
+import TerminalOverlay from '../components/TerminalOverlay';
+import { UserPrograms } from '@/components/UserPrograms';
 import { Button } from '@/components/ui/button';
 import { ArrowRightIcon } from 'lucide-react';
 import Image from 'next/image';
@@ -124,6 +125,8 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      <UserPrograms />
     </div>
   );
 };
