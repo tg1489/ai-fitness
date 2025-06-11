@@ -1,4 +1,4 @@
-import TerminalOverlay from '@/components/TerminalOverlay';
+import TerminalOverlay from '../components/TerminalOverlay.tsx';
 import { Button } from '@/components/ui/button';
 import { ArrowRightIcon } from 'lucide-react';
 import Image from 'next/image';
