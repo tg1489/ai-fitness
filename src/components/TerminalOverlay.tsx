@@ -8,6 +8,18 @@ const TerminalOverlay = () => {
             <div className='w-2 h-2 rounded-full bg-primary animate-pulse'>
               <p className='text-xs text-primary'>SYSTEM ACTIVE</p>
             </div>
+            <p className='text-xs text-muted-foreground'>ID:78412.94</p>
+          </div>
+
+          <p className='text-sm text-foreground mb-2 tracking-tight'>
+            <span className='text-primary'>/</span> WORKOUT ANALYSIS COMPLETE
+          </p>
+
+          <div className='space-y-1.5 text-xs text-muted-foreground'>
+            <div className='flex items-center'>
+              <div className='text-primary mr-2'>01</div>
+              <span>30 min strength training (upper body)</span>
+            </div>
           </div>
         </div>
       </div>
