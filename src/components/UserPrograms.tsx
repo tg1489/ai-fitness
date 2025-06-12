@@ -11,3 +11,18 @@ import {
   ShieldIcon,
 } from "lucide-react";
 import { USER_PROGRAMS } from "@/constants";
+
+const UserPrograms = () => {
+  return (
+    <div className="w-full pb-24 pt-16 relative">
+      <div className="container mx-auto max-w-6xl px-4">
+        {/* HEADER- PROGRAM GALLERY */}
+        <div className="bg-card/90 backdrop-blur-sm border border-border rounded-lg overflow-hidden mb-16">
+          {/* HEADER BAR */}
+          <div className="flex items-center justify-between px-5 py-3 border-b border-border bg-background/70">
+            <div className="flex items-center gap-2">
+              <div className="w-2.5 h-2.5 rounded-full bg-primary"></div>
+              <span className="text-sm text-primary font-medium">Program Gallery</span>
+            </div>
+            <div className="text-sm text-muted-foreground">Featured Plans</div>
+          </div>
