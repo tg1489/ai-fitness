@@ -63,3 +63,56 @@ const UserPrograms = () => {
             </div>
           </div>
         </div>
+
+            {/* Program cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {USER_PROGRAMS.map((program) => (
+            <Card
+              key={program.id}
+              className="bg-card/90 backdrop-blur-sm border border-border hover:border-primary/50 transition-colors overflow-hidden"
+            >
+              {/* Card header with user info */}
+              <div className="flex items-center justify-between px-4 py-2 border-b border-border bg-background/70">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-primary"></div>
+                  <span className="text-sm text-primary">USER.{program.id}</span>
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  {program.fitness_level.toUpperCase()}
+                </div>
+              </div>
+
+              <CardHeader className="pt-6 px-5">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="h-16 w-16 rounded-full overflow-hidden border border-border">
+                    <img
+                      src={program.profilePic}
+                      alt={`${program.first_name}`}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl text-foreground">
+                      {program.first_name}
+                      <span className="text-primary">.exe</span>
+                    </CardTitle>
+                    <div className="text-sm text-muted-foreground flex items-center gap-2 mt-1">
+                      <Users className="h-4 w-4" />
+                      {program.age}y • {program.workout_days}d/week
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex justify-between items-center gap-4">
+                  <div className="px-3 py-1 bg-primary/10 rounded border border-primary/20 text-sm text-primary flex items-center gap-2">
+                    <Sparkles className="h-4 w-4" />
+                    {program.fitness_goal}
+                  </div>
+                  <div className="text-sm text-muted-foreground flex items-center gap-2">
+                    <Clock className="h-4 w-4" />
+                    v3.5
+                  </div>
+                </div>
+              </CardHeader>
+
+              
