@@ -115,4 +115,36 @@ const UserPrograms = () => {
                 </div>
               </CardHeader>
 
-              
+              <CardContent className="px-5">
+                {/* Program details */}
+                <div className="space-y-5 pt-2">
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 rounded-md bg-primary/10 text-primary mt-0.5">
+                      <Dumbbell className="h-5 w-5" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex justify-between items-center">
+                        <h3 className="font-medium text-foreground">
+                          {program.workout_plan.title}
+                        </h3>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        {program.equipment_access}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 rounded-md bg-secondary/10 text-secondary mt-0.5">
+                      <AppleIcon className="h-5 w-5" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex justify-between items-center">
+                        <h3 className="font-medium text-foreground">{program.diet_plan.title}</h3>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        System optimized nutrition
+                      </p>
+                    </div>
+                  </div>
+
