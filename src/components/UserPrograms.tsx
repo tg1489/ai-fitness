@@ -148,3 +148,18 @@ const UserPrograms = () => {
                     </div>
                   </div>
 
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 rounded-md bg-primary/10 text-primary mt-0.5">
+                      <ShieldIcon className="h-5 w-5" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex justify-between items-center">
+                        <h3 className="font-medium text-foreground">AI Safety Protocols</h3>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Protection systems enabled
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
