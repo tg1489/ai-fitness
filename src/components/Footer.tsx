@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/dist/client/link';
+import Link from 'next/link';
 import { ZapIcon } from 'lucide-react';
 
 export const Footer = () => {
