@@ -1,5 +1,5 @@
 import TerminalOverlay from '../components/TerminalOverlay';
-import { UserPrograms } from '@/components/UserPrograms';
+import UserPrograms from '@/components/UserPrograms';
 import { Button } from '@/components/ui/button';
 import { ArrowRightIcon } from 'lucide-react';
 import Image from 'next/image';
@@ -95,7 +95,7 @@ const HomePage = () => {
               <div className='relative aspect-square max-w-lg mx-auto'>
                 <div className='relative overflow-hidden rounded-lg bg-cyber-black'>
                   <img
-                    src='/hero-ai3.png'
+                    src='/hero-ai4.png'
                     alt='AI Fitness Coach'
                     className='size-full object-cover object-center'
                   />
