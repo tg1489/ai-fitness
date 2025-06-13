@@ -4,9 +4,24 @@ export const Footer = () => {
   return (
     <footer className='border-t bg-background/80 backdrop-blur-sm'>
       {/* TOP BORDER GLOW */}
-      <div className='h-px w-full bg-gradient-to-r from-transparent via-primary/30 to-transparent'>
-        
-      </div>
+      <div className='h-px w-full bg-gradient-to-r from-transparent via-primary/30 to-transparent'></div>
+
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          {/* Logo and Copyright */}
+          <div className="flex flex-col items-center md:items-start gap-2">
+            <Link href="/" className="flex items-center gap-2">
+              <div className="p-1 bg-primary/10 rounded">
+                <ZapIcon className="w-4 h-4 text-primary" />
+              </div>
+              <span className="text-xl font-bold font-mono">
+                code<span className="text-primary">flex</span>.ai
+              </span>
+            </Link>
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} codeflex.ai - All rights reserved
+            </p>
+          </div>
     </footer>
   );
 };
