@@ -19,8 +19,24 @@ const GenerateProgramPage = () => {
   const messageContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    vapi.on('call-end', handleCallStart);
-    vapi.on('call-end', handleCallEnd);
+    vapi
+      .on('call-start', handleCallStart)
+      .on('call-end', handleCallEnd)
+      .on('speech-start', handleSpeechStart)
+      .on('speech-end', handleSpeechEnd)
+      .on('message', handleMessage)
+      .on('error', handleError);
+
+    // Cleanut Event Listeners on Unmount
+    return () => {
+      vapi
+        .off('call-start', handleCallStart)
+        .off('call-end', handleCallEnd)
+        .off('speech-start', handleSpeechStart)
+        .off('speech-end', handleSpeechEnd)
+        .off('message', handleMessage)
+        .off('error', handleError);
+    };
   }, []);
 
   return <div>GenerateProgramPage</div>;
