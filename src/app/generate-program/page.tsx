@@ -2,7 +2,7 @@
 
 import { useUser } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState } from 'react';
 
 const GenerateProgramPage = () => {
@@ -14,6 +14,9 @@ const GenerateProgramPage = () => {
 
   const { user } = useUser();
   const router = useRouter();
+
+  // See messages and scroll them automatically
+  const messageContainerRef = useRef<HTMLDivElement>(null);
 
   return <div>GenerateProgramPage</div>;
 };
