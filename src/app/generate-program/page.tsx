@@ -2,7 +2,7 @@
 
 import { useUser } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useState } from 'react';
 
 const GenerateProgramPage = () => {
@@ -17,6 +17,11 @@ const GenerateProgramPage = () => {
 
   // See messages and scroll them automatically
   const messageContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    vapi.on('call-end', handleCallStart);
+    vapi.on('call-end', handleCallEnd);
+  }, []);
 
   return <div>GenerateProgramPage</div>;
 };
