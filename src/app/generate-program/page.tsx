@@ -1,5 +1,7 @@
 'use client';
 
+import { useUser } from '@clerk/nextjs';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { useState } from 'react';
 
@@ -8,6 +10,10 @@ const GenerateProgramPage = () => {
   const [connecting, setConnecting] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [messages, setMessages] = useState([]);
+  const [callEnded, setCallEnded] = useState(false);
+
+  const { user } = useUser();
+  const router = useRouter();
 
   return <div>GenerateProgramPage</div>;
 };
