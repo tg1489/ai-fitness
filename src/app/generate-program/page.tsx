@@ -19,6 +19,18 @@ const GenerateProgramPage = () => {
   const messageContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const handleCallStart = () => {
+      console.log('Call started');
+      setConnecting(false);
+      setCallActive(true);
+      setCallEnded(false);
+    };
+    const handleCallEnd = () => {};
+    const handleSpeechStart = () => {};
+    const handleSpeechEnd = () => {};
+    const handleMessage = (message: any) => {};
+    const handleError = (error: any) => {};
+
     vapi
       .on('call-start', handleCallStart)
       .on('call-end', handleCallEnd)
