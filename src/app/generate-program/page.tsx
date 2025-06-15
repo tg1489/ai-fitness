@@ -36,7 +36,10 @@ const GenerateProgramPage = () => {
       console.log('AI started speaking');
       setIsSpeaking(true);
     };
-    const handleSpeechEnd = () => {};
+    const handleSpeechEnd = () => {
+      console.log('AI stopped speaking');
+      setIsSpeaking(false);
+    };
     const handleMessage = (message: any) => {};
     const handleError = (error: any) => {};
 
