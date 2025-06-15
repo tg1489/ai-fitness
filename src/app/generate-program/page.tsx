@@ -1,5 +1,6 @@
 'use client';
 
+import { vapi } from '@/lib/vapi';
 import { useUser } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useRef } from 'react';
