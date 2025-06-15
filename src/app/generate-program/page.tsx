@@ -41,7 +41,11 @@ const GenerateProgramPage = () => {
       setIsSpeaking(false);
     };
     const handleMessage = (message: any) => {};
-    const handleError = (error: any) => {};
+    const handleError = (error: any) => {
+      console.log('Vapi Error', error);
+      setConnecting(false);
+      setCallActive(false);
+    };
 
     vapi
       .on('call-start', handleCallStart)
