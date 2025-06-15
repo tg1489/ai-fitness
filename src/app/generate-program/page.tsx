@@ -28,6 +28,17 @@ const GenerateProgramPage = () => {
     }
   }, [messages]);
 
+  // Navigate user to profile page after call ends
+  useEffect(() => {
+    if (callEnded) {
+      const redirectTimer = setTimeout(() => {
+        router.push('/profile');
+      }, 1500);
+      // Get rid of timeout when unmounting
+      return () => clearTimeout(redirectTimer);
+    }
+  }, [callEnded, router]);
+
   // Setup event listeners for vapi
   useEffect(() => {
     const handleCallStart = () => {
