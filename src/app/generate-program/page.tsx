@@ -19,6 +19,16 @@ const GenerateProgramPage = () => {
   // See messages and scroll them automatically
   const messageContainerRef = useRef<HTMLDivElement>(null);
 
+  // Auto-scroll messages
+  useEffect(() => {
+    if (messageContainerRef.current) {
+      // Trick to auto-scroll in a div
+      messageContainerRef.current.scrollTop =
+        messageContainerRef.current.scrollHeight;
+    }
+  }, [messages]);
+
+  // Setup event listeners for vapi
   useEffect(() => {
     const handleCallStart = () => {
       console.log('Call started');
