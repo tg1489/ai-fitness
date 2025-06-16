@@ -106,7 +106,10 @@ const GenerateProgramPage = () => {
             full_name: fullName,
           },
         });
-      } catch (error) {}
+      } catch (error) {
+        console.log('Failed to start call', error);
+        setConnecting(false);
+      }
     }
   };
 
