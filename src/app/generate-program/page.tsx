@@ -89,6 +89,22 @@ const GenerateProgramPage = () => {
     };
   }, []);
 
+  const toggleCall = async () => {
+    if (callActive) vapi.stop();
+    else {
+      try {
+        setConnecting(true);
+        await vapi.start();
+        setMessages([]);
+        setCallEnded(false);
+
+        await vapi.start(process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID!, {
+          variableValues: {},
+        });
+      } catch (error) {}
+    }
+  };
+
   return <div>GenerateProgramPage</div>;
 };
 
