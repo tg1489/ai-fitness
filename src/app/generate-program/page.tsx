@@ -134,6 +134,7 @@ const GenerateProgramPage = () => {
           {/* AI ASSISTANT CARD */}
           <Card className='bg-card/90 backdrop-blur-sm border border-border overflow-hidden relative'>
             <div className='aspect-video flex flex-col items-center justify-center p-6 relative'>
+              {/* AI VOICE ANIMATION */}
               <div
                 className={`absolute inset-0 ${
                   isSpeaking ? 'opacity-30' : 'opacity-0'
