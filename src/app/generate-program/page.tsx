@@ -131,8 +131,17 @@ const GenerateProgramPage = () => {
 
         {/* VIDEO CALL AREA */}
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-8'>
+          {/* AI ASSISTANT CARD */}
           <Card className='bg-card/90 backdrop-blur-sm border border-border overflow-hidden relative'>
-            
+            <div className='aspect-video flex flex-col items-center justify-center p-6 relative'>
+
+              
+            </div>
+          </Card>
+
+          {/* USER CARD */}
+          <Card className='bg-card/90 backdrop-blur-sm border border-border overflow-hidden relative'>
+
           </Card>
         </div>
       </div>
