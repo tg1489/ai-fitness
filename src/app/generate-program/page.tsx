@@ -98,8 +98,13 @@ const GenerateProgramPage = () => {
         setMessages([]);
         setCallEnded(false);
 
+        const fullName = user?.firstName
+          ? `${user.firstName} ${user.lastName} || ''`.trim()
+          : 'There';
         await vapi.start(process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID!, {
-          variableValues: {},
+          variableValues: {
+            full_name: fullName,
+          },
         });
       } catch (error) {}
     }
