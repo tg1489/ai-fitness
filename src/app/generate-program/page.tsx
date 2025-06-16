@@ -1,5 +1,6 @@
 'use client';
 
+import { Card } from '@/components/ui/card';
 import { vapi } from '@/lib/vapi';
 import { useUser } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
@@ -130,7 +131,9 @@ const GenerateProgramPage = () => {
 
         {/* VIDEO CALL AREA */}
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-8'>
-          <Card></Card>
+          <Card className='bg-card/90 backdrop-blur-sm border border-border overflow-hidden relative'>
+            
+          </Card>
         </div>
       </div>
     </div>
