@@ -127,6 +127,11 @@ const GenerateProgramPage = () => {
             personal plan
           </p>
         </div>
+
+        {/* VIDEO CALL AREA */}
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-8'>
+          <Card></Card>
+        </div>
       </div>
     </div>
   );
