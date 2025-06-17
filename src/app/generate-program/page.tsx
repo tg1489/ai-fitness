@@ -184,6 +184,29 @@ const GenerateProgramPage = () => {
               <p className='text-sm text-muted-foreground mt-1'>
                 Fitness & Diet Coach
               </p>
+
+              {/* SPEAKING INDICATOR */}
+
+              <div
+                className={`mt-4 flex items-center gap-2 px-3 py-1 rounded-full bg-card border
+              border-border ${isSpeaking ? 'border-primary' : ''}`}
+              >
+                <div
+                  className={`w-2 h-2 rounded-full ${
+                    isSpeaking ? 'bg-primary animate-pulse' : 'bg-muted'
+                  }`}
+                />
+
+                <span className='text-xs text-muted-foreground'>
+                  {isSpeaking
+                    ? 'Speaking...'
+                    : callActive
+                      ? 'Listening...'
+                      : callEnded
+                        ? 'Redirecting to profile...'
+                        : 'Waiting...'}
+                </span>
+              </div>
             </div>
           </Card>
 
