@@ -158,6 +158,9 @@ const GenerateProgramPage = () => {
                   ))}
                 </div>
               </div>
+
+              {/* AI IMAGE */}
+              <div></div>
             </div>
           </Card>
 
