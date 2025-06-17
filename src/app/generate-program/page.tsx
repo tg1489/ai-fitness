@@ -211,7 +211,9 @@ const GenerateProgramPage = () => {
           </Card>
 
           {/* USER CARD */}
-          <Card className='bg-card/90 backdrop-blur-sm border border-border overflow-hidden relative'></Card>
+          <Card className='bg-card/90 backdrop-blur-sm border border-border overflow-hidden relative'>
+            <div className='aspect-video flex flex-col items-center justify-center p-6 relative'></div>
+          </Card>
         </div>
       </div>
     </div>
