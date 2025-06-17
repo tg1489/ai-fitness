@@ -179,6 +179,11 @@ const GenerateProgramPage = () => {
                   />
                 </div>
               </div>
+
+              <h2 className='text-xl font-bold text-foreground'>FitVoice AI</h2>
+              <p className='text-sm text-muted-foreground mt-1'>
+                Fitness & Diet Coach
+              </p>
             </div>
           </Card>
 
