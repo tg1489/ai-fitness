@@ -160,7 +160,13 @@ const GenerateProgramPage = () => {
               </div>
 
               {/* AI IMAGE */}
-              <div></div>
+              <div className='relative size-32 mb-4'>
+                <div
+                  className={`absolute inset-0 bg-primary opacity-10 rounded-full blur-lg ${
+                    isSpeaking ? 'animate-pulse' : ''
+                  }`}
+                />
+              </div>
             </div>
           </Card>
 
