@@ -211,16 +211,17 @@ const GenerateProgramPage = () => {
           </Card>
 
           {/* USER CARD */}
-          <Card className='bg-card/90 backdrop-blur-sm border border-border overflow-hidden relative'>
+          <Card className='bg-card/90 backdrop-blur-sm border overflow-hidden relative'>
             <div className='aspect-video flex flex-col items-center justify-center p-6 relative'>
               {/* USER IMAGE */}
-              <div>
+              <div className='size-32 relative mb-4'>
                 <img
                   src={user?.imageUrl}
                   alt='User'
                   className='object-cover rounded-full'
                 />
               </div>
+
               <h2 className='text-xl font-bold text-ground'>You</h2>
               <p className='text-sm text-muted-foreground mt-1'>
                 {user
