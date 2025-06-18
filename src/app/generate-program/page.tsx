@@ -221,8 +221,8 @@ const GenerateProgramPage = () => {
                   className='object-cover rounded-full'
                 />
               </div>
+              <h2 className='text-xl font-bold text-ground'>You</h2>
 
-              
             </div>
           </Card>
         </div>
