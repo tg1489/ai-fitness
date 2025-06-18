@@ -240,7 +240,9 @@ const GenerateProgramPage = () => {
           </Card>
 
           {/* CALL CONTROLS */}
-          <div></div>
+          <div className='w-full flex justify-center gap-4'>
+            <Button className={``}></Button>
+          </div>
         </div>
       </div>
     </div>
