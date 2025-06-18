@@ -238,6 +238,9 @@ const GenerateProgramPage = () => {
               </div>
             </div>
           </Card>
+
+          {/* CALL CONTROLS */}
+          <div></div>
         </div>
       </div>
     </div>
