@@ -222,7 +222,11 @@ const GenerateProgramPage = () => {
                 />
               </div>
               <h2 className='text-xl font-bold text-ground'>You</h2>
-
+              <p className='text-sm text-muted-foreground mt-1'>
+                {user
+                  ? (user.firstName + '' + (user.lastName || '')).trim()
+                  : 'Guest'}
+              </p>
             </div>
           </Card>
         </div>
