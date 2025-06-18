@@ -227,6 +227,13 @@ const GenerateProgramPage = () => {
                   ? (user.firstName + '' + (user.lastName || '')).trim()
                   : 'Guest'}
               </p>
+
+              {/* User Ready Text */}
+              <div
+                className={`mt-4 flex items-center gap-2 px-3 py-1 rounded-full bg-card border`}
+              >
+                <div className={`w-2 h-2 rounded-full bg-muted`} />
+              </div>
             </div>
           </Card>
         </div>
