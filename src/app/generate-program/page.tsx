@@ -1,5 +1,6 @@
 'use client';
 
+import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { vapi } from '@/lib/vapi';
 import { useUser } from '@clerk/nextjs';
@@ -241,7 +242,15 @@ const GenerateProgramPage = () => {
 
           {/* CALL CONTROLS */}
           <div className='w-full flex justify-center gap-4'>
-            <Button className={``}></Button>
+            <Button
+              className={`w-40 text-xl rounded-3xl ${
+                callActive
+                  ? 'bg-destructive hover:bg-destructive/90'
+                  : callEnded
+                    ? 'bg-primary hover:bg-primary/90'
+                    : 'bg-muted'
+              } text-white relative`}
+            ></Button>
           </div>
         </div>
       </div>
