@@ -239,33 +239,32 @@ const GenerateProgramPage = () => {
               </div>
             </div>
           </Card>
+        </div>
+        {/* CALL CONTROLS */}
+        <div className='w-full flex justify-center gap-4'>
+          <Button
+            className={`w-40 text-xl rounded-3xl ${
+              callActive
+                ? 'bg-destructive hover:bg-destructive/90'
+                : callEnded
+                  ? 'bg-primary hover:bg-primary/90'
+                  : 'bg-muted'
+            } text-white relative`}
+          >
+            {connecting && (
+              <span className='absolute inset-0 rounded-full animate-ping bg-primary/50 opacity-75'></span>
+            )}
 
-          {/* CALL CONTROLS */}
-          <div className='w-full flex justify-center gap-4'>
-            <Button
-              className={`w-40 text-xl rounded-3xl ${
-                callActive
-                  ? 'bg-destructive hover:bg-destructive/90'
+            <span>
+              {callActive
+                ? 'End Call'
+                : connecting
+                  ? 'Connecting...'
                   : callEnded
-                    ? 'bg-primary hover:bg-primary/90'
-                    : 'bg-muted'
-              } text-white relative`}
-            >
-              {connecting && (
-                <span className='absolute inset-0 rounded-full animate-ping bg-primary/50 opacity-75'></span>
-              )}
-
-              <span>
-                {callActive
-                  ? 'End Call'
-                  : connecting
-                    ? 'Connecting...'
-                    : callEnded
-                      ? 'View Profile'
-                      : 'Start Call'}
-              </span>
-            </Button>
-          </div>
+                    ? 'View Profile'
+                    : 'Start Call'}
+            </span>
+          </Button>
         </div>
       </div>
     </div>
