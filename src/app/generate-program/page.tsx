@@ -250,6 +250,8 @@ const GenerateProgramPage = () => {
                   ? 'bg-primary hover:bg-primary/90'
                   : 'bg-muted'
             } text-white relative`}
+
+            onClick={toggleCall}
           >
             {connecting && (
               <span className='absolute inset-0 rounded-full animate-ping bg-primary/50 opacity-75'></span>
