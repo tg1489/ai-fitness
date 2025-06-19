@@ -92,11 +92,12 @@ const GenerateProgramPage = () => {
   }, []);
 
   const toggleCall = async () => {
-    if (callActive) vapi.stop();
-    else {
+    if (callActive) {
+      vapi.stop();
+    } else {
       try {
         setConnecting(true);
-        await vapi.start();
+        // await vapi.start();
         setMessages([]);
         setCallEnded(false);
 
