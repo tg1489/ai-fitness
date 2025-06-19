@@ -254,6 +254,16 @@ const GenerateProgramPage = () => {
               {connecting && (
                 <span className='absolute inset-0 rounded-full animate-ping bg-primary/50 opacity-75'></span>
               )}
+
+              <span>
+                {callActive
+                  ? 'End Call'
+                  : connecting
+                    ? 'Connecting...'
+                    : callEnded
+                      ? 'View Profile'
+                      : 'Start Call'}
+              </span>
             </Button>
           </div>
         </div>
