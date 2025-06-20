@@ -257,7 +257,7 @@ const GenerateProgramPage = () => {
             <div className='space-y-3'>
               {messages.map((msg, index) => (
                 <div key={index} className='message-item animate-fadeIn'>
-                  <div >
+                  <div className='font-semibold text-xs text-muted-foreground mb-1'>
 
                   </div>
 
