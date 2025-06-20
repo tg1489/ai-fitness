@@ -65,7 +65,9 @@ const GenerateProgramPage = () => {
       setIsSpeaking(false);
     };
     const handleMessage = (message: any) => {
-      if (message.type === 'transcript' && message.transcriptType === 'final')
+      if (message.type === 'transcript' && message.transcriptType === 'final') {
+        const newMessage = { content: message.transcript, role: message.role };
+      }
     };
     const handleError = (error: any) => {
       console.log('Vapi Error', error);
