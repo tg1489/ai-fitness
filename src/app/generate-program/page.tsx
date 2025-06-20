@@ -253,7 +253,13 @@ const GenerateProgramPage = () => {
             ref={messageContainerRef}
             className='w-full bg-card/90 backdrop-blur-sm border border-border rounded-xl p-4 mb-8 h-64 overflow-y-auto
         transition-all duration-300 scroll-smooth'
-          ></div>
+          >
+            <div className='space-y-3'>
+              {messages.map((msg, index) => (
+                
+              ))}
+            </div>
+          </div>
         )}
 
         {/* CALL CONTROLS */}
