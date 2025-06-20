@@ -246,6 +246,13 @@ const GenerateProgramPage = () => {
             </div>
           </Card>
         </div>
+
+      {/* MESSAGE COUNTER */}
+      {messages.length > 0 && (
+        
+      )}
+
+
         {/* CALL CONTROLS */}
         <div className='w-full flex justify-center gap-4'>
           <Button
