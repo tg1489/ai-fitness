@@ -247,11 +247,14 @@ const GenerateProgramPage = () => {
           </Card>
         </div>
 
-      {/* MESSAGE COUNTER */}
-      {messages.length > 0 && (
-        
-      )}
-
+        {/* MESSAGE COUNTER */}
+        {messages.length > 0 && (
+          <div
+            ref={messageContainerRef}
+            className='w-full bg-card/90 backdrop-blur-sm border border-border rounded-xl p-4 mb-8 h-64 overflow-y-auto
+        transition-all duration-300 scroll-smooth'
+          ></div>
+        )}
 
         {/* CALL CONTROLS */}
         <div className='w-full flex justify-center gap-4'>
