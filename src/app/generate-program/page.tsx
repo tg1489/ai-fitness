@@ -64,7 +64,9 @@ const GenerateProgramPage = () => {
       console.log('AI stopped speaking');
       setIsSpeaking(false);
     };
-    const handleMessage = (message: any) => {};
+    const handleMessage = (message: any) => {
+      if (message.type === 'transcript' && message.transcriptType === 'final')
+    };
     const handleError = (error: any) => {
       console.log('Vapi Error', error);
       setConnecting(false);
