@@ -12,7 +12,7 @@ const GenerateProgramPage = () => {
   const [callActive, setCallActive] = useState(false);
   const [connecting, setConnecting] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState<any[]>([]);
   const [callEnded, setCallEnded] = useState(false);
 
   const { user } = useUser();
@@ -67,6 +67,7 @@ const GenerateProgramPage = () => {
     const handleMessage = (message: any) => {
       if (message.type === 'transcript' && message.transcriptType === 'final') {
         const newMessage = { content: message.transcript, role: message.role };
+        setMessages((prev) => [...prev, newMessage]);
       }
     };
     const handleError = (error: any) => {
