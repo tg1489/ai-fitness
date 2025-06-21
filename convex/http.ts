@@ -94,7 +94,10 @@ http.route({
         try {
             const payload = await request.json();
 
-            const {} = payload
+            const {
+                user_id, age, height, weight, injuries, workout_days, fitness_goal, fitness_level,
+                dietary_restrictions
+            } = payload
         } catch (error) {
             
         }
