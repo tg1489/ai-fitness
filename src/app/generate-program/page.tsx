@@ -258,11 +258,15 @@ const GenerateProgramPage = () => {
               {messages.map((msg, index) => (
                 <div key={index} className='message-item animate-fadeIn'>
                   <div className='font-semibold text-xs text-muted-foreground mb-1'>
-                    {msg.role === 'assistant' ? 'FitVoice AI' : 'You'}:
+                    {msg.role === 'assistant' ? 'Fitness AI' : 'You'}:
                   </div>
                   <p className='text-foreground'>{msg.content}</p>
                 </div>
               ))}
+
+              {callEnded && (
+                
+              )}
             </div>
           </div>
         )}
