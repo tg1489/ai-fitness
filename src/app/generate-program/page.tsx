@@ -266,7 +266,13 @@ const GenerateProgramPage = () => {
 
               {callEnded && (
                 <div className='message-item animate-fadeIn'>
-
+                  <div className='font-semibold text-xs text-primary  mb-1'>
+                    System:
+                  </div>
+                  <p className='text-foreground'>
+                    Your fitness program has been created! Redirecting to your
+                    profile...
+                  </p>
                 </div>
               )}
             </div>
