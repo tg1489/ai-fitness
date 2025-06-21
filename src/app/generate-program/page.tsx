@@ -265,7 +265,9 @@ const GenerateProgramPage = () => {
               ))}
 
               {callEnded && (
-                
+                <div className='message-item animate-fadeIn'>
+
+                </div>
               )}
             </div>
           </div>
