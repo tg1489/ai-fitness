@@ -91,7 +91,13 @@ http.route({
     path:'/vapi/generate-program',
     method:'POST',
     handler: httpAction(async (ctx, request) => {
-        
+        try {
+            const payload = await request.json();
+
+            const {} = payload
+        } catch (error) {
+            
+        }
     })
 })
 
