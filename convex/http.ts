@@ -86,5 +86,8 @@ http.route({
     })
 });
 
+// Vapi route
+http.route({})
+
 // Export the router to be used by Convex
 export default http;
