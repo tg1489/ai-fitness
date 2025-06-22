@@ -105,6 +105,7 @@ http.route({
 })
 
 // Send data to Gemini
+// AIzaSyB9wrQv_d0t_6JHH3rsrgxNYsnudwyv1fE
 
 // Export the router to be used by Convex
 export default http;
