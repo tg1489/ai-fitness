@@ -3,6 +3,7 @@ import { WebhookEvent } from '@clerk/nextjs/server';
 import { Webhook } from 'svix';
 import { api } from './_generated/api';
 import { httpAction } from './_generated/server';
+import {GoogleGenerativeAI} from '@google/generative-ai'
 
 // Create a new HTTP router instance
 const http = httpRouter();
