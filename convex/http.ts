@@ -8,6 +8,8 @@ import {GoogleGenerativeAI} from '@google/generative-ai'
 // Create a new HTTP router instance
 const http = httpRouter();
 
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!)
+
 // Define a POST route at /clerk/webhook
 http.route({
     path: '/clerk/webhook',
