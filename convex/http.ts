@@ -101,8 +101,13 @@ http.route({
                 user_id, age, height, weight, injuries, workout_days, fitness_goal, fitness_level,
                 dietary_restrictions
             } = payload
+
+            const model = genAI.getGenerativeModel({
+                model: 'gemini-2.0-flash-001',
+            })
+
         } catch (error) {
-            
+            console.log('Error creating the plan', error)
         }
     })
 })
