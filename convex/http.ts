@@ -124,6 +124,11 @@ http.route({
             - Consider muscle group splits to avoid overtraining the same muscles on consecutive days
             - Design exercises that match the fitness level and account for any injuries
             - Structure the workouts to specifically target the user's fitness goal
+
+            CRITICAL SCHEMA INSTRUCTIONS:
+            - Your output MUST contain ONLY the fields specified below, NO ADDITIONAL FIELDS
+            - "sets" and "reps" MUST ALWAYS be NUMBERS, never strings
+            - For example: "sets": 3, "reps": 10
             `
 
         } catch (error) {
