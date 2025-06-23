@@ -104,6 +104,10 @@ http.route({
 
             const model = genAI.getGenerativeModel({
                 model: 'gemini-2.0-flash-001',
+                generationConfig: {
+                    temperature: 0.4, // Lower temp for more predictable outputs
+                    
+                }
             })
 
         } catch (error) {
