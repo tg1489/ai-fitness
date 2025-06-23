@@ -106,7 +106,8 @@ http.route({
                 model: 'gemini-2.0-flash-001',
                 generationConfig: {
                     temperature: 0.4, // Lower temp for more predictable outputs
-                    
+                    topP: 0.9,
+                    responseMimeType: 'application/json'
                 }
             })
 
