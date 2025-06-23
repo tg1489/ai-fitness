@@ -111,6 +111,12 @@ http.route({
                 }
             })
 
+            const workoutPrompt = `You are an experienced fitness coach creating a personalized workout plan based on:
+            Age: ${age}
+            Height: ${height}
+            Weight: ${weight}
+            `
+
         } catch (error) {
             console.log('Error creating the plan', error)
         }
