@@ -115,6 +115,10 @@ http.route({
             Age: ${age}
             Height: ${height}
             Weight: ${weight}
+            Injuries or limitations: ${injuries}
+            Available days for workout: ${workout_days}
+            Fitness goal: ${fitness_goal}
+            Fitness level: ${fitness_level}
             `
 
         } catch (error) {
