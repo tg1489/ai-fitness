@@ -143,6 +143,14 @@ http.route({
                   "day": "Monday",
                   "routines": [
                     {
+                        "name": "Exercise Name",
+                        "sets": 3,
+                        "reps": 10
+                      }
+                    ]
+                  }
+                ]
+              }
             `
 
         } catch (error) {
