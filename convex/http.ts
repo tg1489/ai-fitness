@@ -151,7 +151,9 @@ http.route({
                   }
                 ]
               }
-            `
+
+              DO NOT add any fields that are not in this example. Your response must be a valid JSON object with no additional text.
+            `;
 
         } catch (error) {
             console.log('Error creating the plan', error)
