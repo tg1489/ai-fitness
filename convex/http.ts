@@ -138,6 +138,11 @@ http.route({
             Return a JSON object with this EXACT structure:
             {
               "schedule": ["Monday", "Wednesday", "Friday"],
+              "exercises": [
+                {
+                  "day": "Monday",
+                  "routines": [
+                    {
             `
 
         } catch (error) {
