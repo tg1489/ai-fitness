@@ -129,6 +129,11 @@ http.route({
             - Your output MUST contain ONLY the fields specified below, NO ADDITIONAL FIELDS
             - "sets" and "reps" MUST ALWAYS be NUMBERS, never strings
             - For example: "sets": 3, "reps": 10
+            - Do NOT use text like "reps": "As many as possible" or "reps": "To failure"
+            - Instead use specific numbers like "reps": 12 or "reps": 15
+            - For cardio, use "sets": 1, "reps": 1 or another appropriate number
+            - NEVER include strings for numerical fields
+            - NEVER add extra fields not shown in the example below
             `
 
         } catch (error) {
