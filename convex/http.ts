@@ -134,6 +134,10 @@ http.route({
             - For cardio, use "sets": 1, "reps": 1 or another appropriate number
             - NEVER include strings for numerical fields
             - NEVER add extra fields not shown in the example below
+
+            Return a JSON object with this EXACT structure:
+            {
+              "schedule": ["Monday", "Wednesday", "Friday"],
             `
 
         } catch (error) {
