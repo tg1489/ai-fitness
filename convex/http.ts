@@ -159,16 +159,29 @@ http.route({
             const workoutPlanText = workoutResult.response.text();
 
      
+
             // Validate and fix workout plan to ensure it has proper numeric types
             function validateWorkoutPlan(plan: any) {
                 const validatedPlan = {
                     schedule: plan.schedule,
                     exercises: plan.exercises.map((exercise: any) => ({
                       day: exercise.day,
+                      routines: exercise.routines.map((routine: any) => ({
+                        name: routine.name,
+                        sets: typeof routine.sets === "number" ? routine.sets : parseInt(routine.sets) || 1,
+                        reps: typeof routine.reps === "number" ? routine.reps : parseInt(routine.reps) || 10,
+                      })),
+                    })),
+                  };
+                  return validatedPlan;
+                }
+           
             }
+
+             
             
 
-        } catch (error) {
+         catch (error) {
             console.log('Error creating the plan', error)
         }
     })
