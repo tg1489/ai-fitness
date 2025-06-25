@@ -158,7 +158,9 @@ http.route({
             const workoutResult = await model.generateContent(workoutPrompt)
             const workoutPlanText = workoutResult.response.text();
 
-            // Validate input coming from AI
+     
+            // Validate and fix workout plan to ensure it has proper numeric types
+            function validateWorkoutPlan(plan: any)
 
         } catch (error) {
             console.log('Error creating the plan', error)
