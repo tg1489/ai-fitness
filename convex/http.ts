@@ -160,7 +160,13 @@ http.route({
 
      
             // Validate and fix workout plan to ensure it has proper numeric types
-            function validateWorkoutPlan(plan: any)
+            function validateWorkoutPlan(plan: any) {
+                const validatedPlan = {
+                    schedule: plan.schedule,
+                    exercises: plan.exercises.map((exercise: any) => ({
+                      day: exercise.day,
+            }
+            
 
         } catch (error) {
             console.log('Error creating the plan', error)
