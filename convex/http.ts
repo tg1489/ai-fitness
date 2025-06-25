@@ -177,18 +177,18 @@ http.route({
                 }
 
                 // validate diet plan to ensure it strictly follows schema
-function validateDietPlan(plan: any) {
+                function validateDietPlan(plan: any) {
      // only keep the fields we want
-  const validatedPlan = { 
-    dailyCalories: plan.dailyCalories,
-    meals: plan.meals.map((meal: any) => ({
-        name: meal.name,
-        foods: meal.foods,
-      })),
-    };
-    return validatedPlan;
-  }
-}
+        const validatedPlan = { 
+            dailyCalories: plan.dailyCalories,
+            meals: plan.meals.map((meal: any) => ({
+                name: meal.name,
+                foods: meal.foods,
+            })),
+            };
+            return validatedPlan;
+        }
+        }
            
             
 
