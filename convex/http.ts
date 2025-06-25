@@ -175,6 +175,9 @@ http.route({
                   };
                   return validatedPlan;
                 }
+
+                // validate diet plan to ensure it strictly follows schema
+function validateDietPlan(plan: any) {
            
             }
 
