@@ -178,6 +178,10 @@ http.route({
 
                 // validate diet plan to ensure it strictly follows schema
 function validateDietPlan(plan: any) {
+     // only keep the fields we want
+  const validatedPlan = { 
+    dailyCalories: plan.dailyCalories,
+}
            
             }
 
