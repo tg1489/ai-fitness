@@ -189,6 +189,7 @@ http.route({
 
             // Validate the input coming from AI
             let workoutPlan = JSON.parse(workoutPlanText)
+            workoutPlan = validateWorkoutPlan(workoutPlan)
 
         }
 
