@@ -191,6 +191,8 @@ http.route({
             let workoutPlan = JSON.parse(workoutPlanText)
             workoutPlan = validateWorkoutPlan(workoutPlan)
 
+            const dietPrompt = ``
+
         }
 
          catch (error) {
