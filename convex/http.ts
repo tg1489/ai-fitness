@@ -187,6 +187,9 @@ http.route({
             const workoutResult = await model.generateContent(workoutPrompt)
             const workoutPlanText = workoutResult.response.text();
 
+            // Validate the input coming from AI
+            let workoutPlan = JSON.parse(workoutPlanText)
+
         }
 
          catch (error) {
