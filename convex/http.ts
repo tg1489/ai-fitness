@@ -191,7 +191,9 @@ http.route({
             let workoutPlan = JSON.parse(workoutPlanText)
             workoutPlan = validateWorkoutPlan(workoutPlan)
 
-            const dietPrompt = ``
+            const dietPrompt = `You are an experienced nutrition coach creating a personalized diet plan based on:
+            
+            `
 
         }
 
