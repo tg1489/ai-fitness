@@ -192,7 +192,11 @@ http.route({
             workoutPlan = validateWorkoutPlan(workoutPlan)
 
             const dietPrompt = `You are an experienced nutrition coach creating a personalized diet plan based on:
-            
+            Age: ${age}
+            Height: ${height}
+            Weight: ${weight}
+            Fitness goal: ${fitness_goal}
+            Dietary restrictions: ${dietary_restrictions}
             `
 
         }
