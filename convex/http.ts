@@ -219,6 +219,11 @@ http.route({
                     "name": "Breakfast",
                     "foods": ["Oatmeal with berries", "Greek yogurt", "Black coffee"]
                   },
+                  {
+                    "name": "Lunch",
+                    "foods": ["Grilled chicken salad", "Whole grain bread", "Water"]
+                  }
+                ]
             }
             `
 
