@@ -212,7 +212,14 @@ http.route({
             - Each meal should include ONLY a "name" and "foods" array
 
             Return a JSON object with this EXACT structure and no other fields:
-            
+            {
+                "dailyCalories": 2000,
+                "meals": [
+                  {
+                    "name": "Breakfast",
+                    "foods": ["Oatmeal with berries", "Greek yogurt", "Black coffee"]
+                  },
+            }
             `
 
         }
