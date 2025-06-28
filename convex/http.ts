@@ -210,6 +210,9 @@ http.route({
             - DO NOT add fields like "supplements", "macros", "notes", or ANYTHING else
             - ONLY include the EXACT fields shown in the example below
             - Each meal should include ONLY a "name" and "foods" array
+
+            Return a JSON object with this EXACT structure and no other fields:
+            
             `
 
         }
