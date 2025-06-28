@@ -207,6 +207,9 @@ http.route({
             CRITICAL SCHEMA INSTRUCTIONS:
             - Your output MUST contain ONLY the fields specified below, NO ADDITIONAL FIELDS
             - "dailyCalories" MUST be a NUMBER, not a string
+            - DO NOT add fields like "supplements", "macros", "notes", or ANYTHING else
+            - ONLY include the EXACT fields shown in the example below
+            - Each meal should include ONLY a "name" and "foods" array
             `
 
         }
