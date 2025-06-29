@@ -229,9 +229,13 @@ http.route({
 
             const dietResult = await model.generateContent(dietPrompt)
             const dietPlanText = dietResult.response.text()
+
+            // Validate the input coming from AI
             let dietPlan = JSON.parse(dietPlanText)
             dietPlan = validateDietPlan(dietPlan)
             console.log(`Validated diet plan: ${dietPlan}`)
+
+            // Save to DB: Convex
 
 
 
