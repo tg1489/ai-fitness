@@ -231,7 +231,8 @@ http.route({
             const dietPlanText = dietResult.response.text()
             let dietPlan = JSON.parse(dietPlanText)
             dietPlan = validateDietPlan(dietPlan)
-            
+            console.log(`Validated diet plan: ${dietPlan}`)
+
 
 
         }
