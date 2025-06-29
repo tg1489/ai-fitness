@@ -229,6 +229,7 @@ http.route({
 
             const dietResult = await model.generateContent(dietPrompt)
             const dietPlanText = dietResult.response.text()
+            let dietPlan = JSON.parse(dietPlanText)
 
         }
 
