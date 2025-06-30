@@ -35,6 +35,8 @@ export const createPlan = mutation({
     handler: async (ctx, args) => {
         // Deactivate old plans
         const activePlans = await ctx.db
+        .query('plans')
+        
         await ctx.db.insert('plans', args)
     }
 })
