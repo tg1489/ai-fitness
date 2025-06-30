@@ -32,7 +32,7 @@ export const createPlan = mutation({
         }),
         isActive: v.boolean(),
       },
-    handler: async (ctx, req) => {
+    handler: async (ctx, args) => {
 
     }
 })
