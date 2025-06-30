@@ -36,7 +36,8 @@ export const createPlan = mutation({
         // Deactivate old plans
         const activePlans = await ctx.db
         .query('plans')
-        
+        .withIndex('by_user_id', (q) => q.eq('userId', args.userId))
+        .filter()
         await ctx.db.insert('plans', args)
     }
 })
