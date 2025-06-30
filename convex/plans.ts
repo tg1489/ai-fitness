@@ -14,7 +14,13 @@ export const createPlan = mutation({
                   name: v.string(),
                   sets: v.number(),
                   reps: v.number(),
-
+                })
+                ),
+              })
+            ),
+          }),
+          dietPlan: v.object({
+            dailyCalories: v.number(),
     },
     handler: async (ctx, req) => {
 
