@@ -33,6 +33,8 @@ export const createPlan = mutation({
         isActive: v.boolean(),
       },
     handler: async (ctx, args) => {
-
+        // Deactivate old plans
+        const activePlans = await ctx.db
+        await ctx.db.insert('plans', args)
     }
 })
