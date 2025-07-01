@@ -45,5 +45,7 @@ export const createPlan = mutation({
         }
 
         const planId = await ctx.db.insert('plans', args)
+
+        return planId;
     }
 })
