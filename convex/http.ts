@@ -236,6 +236,7 @@ http.route({
             console.log(`Validated diet plan: ${dietPlan}`)
 
             // Save to DB: Convex
+            await ctx.runMutation()
 
 
 
