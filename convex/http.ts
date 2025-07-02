@@ -242,7 +242,8 @@ http.route({
               dietPlan,
               isActive: true,
               workoutPlan,
-              
+              name: `${fitness_goal} Plan - ${new Date().toLocaleDateString()}`
+
 
             })
 
