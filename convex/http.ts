@@ -247,7 +247,7 @@ http.route({
 
             })
 
-
+            return new Response()
 
         }
 
