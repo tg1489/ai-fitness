@@ -5,6 +5,7 @@ import { api } from './_generated/api';
 import { httpAction } from './_generated/server';
 import {GoogleGenerativeAI} from '@google/generative-ai'
 
+
 // Create a new HTTP router instance
 const http = httpRouter();
 
@@ -238,6 +239,8 @@ http.route({
             // Save to DB: Convex
             const planId = await ctx.runMutation(api.plans.createPlan, {
               userId: user_id,
+              dietPlan,
+              isActive: true,
 
             })
 
