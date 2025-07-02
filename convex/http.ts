@@ -241,6 +241,8 @@ http.route({
               userId: user_id,
               dietPlan,
               isActive: true,
+              workoutPlan,
+              
 
             })
 
