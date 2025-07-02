@@ -236,7 +236,10 @@ http.route({
             console.log(`Validated diet plan: ${dietPlan}`)
 
             // Save to DB: Convex
-            const planId = await ctx.runMutation(api.plans.createPlan, {})
+            const planId = await ctx.runMutation(api.plans.createPlan, {
+              userId: user_id,
+
+            })
 
 
 
