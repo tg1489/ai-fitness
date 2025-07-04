@@ -265,7 +265,12 @@ http.route({
         }
 
          catch (error) {
-            console.log('Error creating the plan', error)
+            console.log('Error creating the plan', error);
+            return new Response(
+              JSON.stringify({
+                success: false
+              })
+            )
         }
     })
 })
