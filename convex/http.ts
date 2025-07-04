@@ -255,7 +255,10 @@ http.route({
                   workoutPlan,
                   dietPlan
                 },
-              })
+              }),
+              {
+                status: 200,
+              }
             )
 
         }
