@@ -247,7 +247,11 @@ http.route({
 
             })
 
-            return new Response()
+            return new Response(
+              JSON.stringify({
+                
+              })
+            )
 
         }
 
