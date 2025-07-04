@@ -251,8 +251,10 @@ http.route({
               JSON.stringify({
                 success: true,
                 data: {
-                  
-                }
+                  planId,
+                  workoutPlan,
+                  dietPlan
+                },
               })
             )
 
