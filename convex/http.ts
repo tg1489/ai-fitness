@@ -268,8 +268,10 @@ http.route({
             console.log('Error creating the plan', error);
             return new Response(
               JSON.stringify({
-                success: false
-              })
+                success: false,
+                error: error instanceof Error ? error.message : String(error),
+
+              }),
             )
         }
     })
