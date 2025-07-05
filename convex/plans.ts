@@ -51,4 +51,6 @@ export const createPlan = mutation({
     }
 })
 
-export const getUserPlans = query()
+export const getUserPlans = query({
+  args: {userId:v.string()}
+})
