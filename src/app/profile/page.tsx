@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { act, useState } from 'react';
 import { useUser } from '@clerk/nextjs';
 import { useQuery } from 'convex/react';
 import React from 'react';
@@ -13,6 +13,9 @@ const ProfilePage = () => {
   const [selectedPlanId, setSelectedPlanId] = useState<null | string>(null);
 
   const activePlan = allPlans?.find((plan) => plan.isActive);
+  const currentPlan = selectedPlanId
+    ? allPlans?.find((plan) => plan._id === selectedPlanId)
+    : activePlan;
 
   return <div>ProfilePage</div>;
 };
