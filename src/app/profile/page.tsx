@@ -20,7 +20,7 @@ const ProfilePage = () => {
 
   return (
     <section className='relative z-10 pt-12 pb-32 flex-grow container mx-auto px-4'>
-      <ProfileHeader />
+      <ProfileHeader user={user}/>
     </section>
   );
 };
