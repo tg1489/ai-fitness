@@ -4,6 +4,7 @@ import { useUser } from '@clerk/nextjs';
 import { useQuery } from 'convex/react';
 import React from 'react';
 import { api } from '../../../convex/_generated/api';
+import ProfileHeader from '@/components/ProfileHeader';
 
 const ProfilePage = () => {
   const { user } = useUser();
@@ -18,7 +19,9 @@ const ProfilePage = () => {
     : activePlan;
 
   return (
-    <section className='relative z-10 pt-12 pb-32 flex-grow container mx-auto px-4'></section>
+    <section className='relative z-10 pt-12 pb-32 flex-grow container mx-auto px-4'>
+      <ProfileHeader />
+    </section>
   );
 };
 
