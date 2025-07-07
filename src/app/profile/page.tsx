@@ -17,7 +17,7 @@ const ProfilePage = () => {
     ? allPlans?.find((plan) => plan._id === selectedPlanId)
     : activePlan;
 
-  return <div>ProfilePage</div>;
+  return <section></section>;
 };
 
 export default ProfilePage;
