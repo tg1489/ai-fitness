@@ -8,7 +8,13 @@ const ProfileHeader = ({ user }: { user: UserResource }) => {
       <CornerElements />
 
       <div className='flex flex-col md:flex-row items-start md:items-center gap-6'>
-        
+        <div>
+          {user.imageUrl ? (
+            // Filler
+          ) : (
+            // Filler
+          )}
+        </div>
       </div>
     </div>
   );
