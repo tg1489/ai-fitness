@@ -12,12 +12,13 @@ const ProfileHeader = ({ user }: { user: UserResource }) => {
           {user.imageUrl ? (
             <div className='relative w-24 h-24 overflow-hidden rounded-lg'>
               <img
-              src={user.imageUrl}
-              alt={user.fullName || 'Profile'}
-              className='w-full h-full object-cover'/>
+                src={user.imageUrl}
+                alt={user.fullName || 'Profile'}
+                className='w-full h-full object-cover'
+              />
             </div>
           ) : (
-            // Filler
+            <div></div>
           )}
         </div>
       </div>
