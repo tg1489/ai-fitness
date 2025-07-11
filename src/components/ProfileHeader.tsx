@@ -18,7 +18,9 @@ const ProfileHeader = ({ user }: { user: UserResource }) => {
               />
             </div>
           ) : (
-            <div></div>
+            <div className='w-24 h-24 rounded-lg bg-gradient-to-br from-primary/30 to-secondary/30 flex items-center justify-center'>
+              
+            </div>
           )}
         </div>
       </div>
