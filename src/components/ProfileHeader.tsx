@@ -28,7 +28,9 @@ const ProfileHeader = ({ user }: { user: UserResource | null | undefined }) => {
           <div className='absolute bottom-0 right-0 w-4 h-4 rounded-full bg-green-500 border-2 border-background'></div>
         </div>
 
-        <div></div>
+        <div className='flex-1'>
+          <div className='flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2'></div>
+        </div>
       </div>
     </div>
   );
