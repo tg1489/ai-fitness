@@ -38,6 +38,11 @@ const ProfileHeader = ({ user }: { user: UserResource | null | undefined }) => {
                 <p className='text-xs font-mono text-primary'>USER ACTIVE</p>
               </div>
             </div>
+            <div className='h-px w-full bg-gradient-to-r from-primary via-secondary to-primary opacity-50 my-2'>
+              <p className='text-muted-foreground font-mono'>
+                {user.primaryEmailAddress?.emailAddress}
+              </p>
+            </div>
           </div>
         </div>
       </div>
