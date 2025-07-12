@@ -34,7 +34,9 @@ const ProfileHeader = ({ user }: { user: UserResource | null | undefined }) => {
               <span className='text-foreground'>{user.fullName}</span>
             </h1>
             <div className='flex items-center bg-cyber-terminal-bg backdrop-blur-sm border border-border rounded px-3 py-1'>
-              
+              <div className='w-2 h-2 rounded-full bg-primary animate-pulse mr-2'>
+                <p className='text-xs font-mono text-primary'>USER ACTIVE</p>
+              </div>
             </div>
           </div>
         </div>
