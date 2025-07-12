@@ -27,6 +27,8 @@ const ProfileHeader = ({ user }: { user: UserResource | null | undefined }) => {
           )}
           <div className='absolute bottom-0 right-0 w-4 h-4 rounded-full bg-green-500 border-2 border-background'></div>
         </div>
+
+        <div></div>
       </div>
     </div>
   );
