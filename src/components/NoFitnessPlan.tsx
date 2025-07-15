@@ -10,6 +10,13 @@ const NoFitnessPlan = () => {
       <h2 className='text-2xl font-bold mb-4 font-mono'>
         <span className='text-primary'>No</span> fitness plans yet
       </h2>
+
+      <p className='text-muted-foreground mb-6 max-w-md mx-auto'>
+        
+      </p>
+      <Button>
+
+      </Button>
     </div>
   );
 };
