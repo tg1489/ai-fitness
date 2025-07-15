@@ -5,6 +5,7 @@ import { useQuery } from 'convex/react';
 import React from 'react';
 import { api } from '../../../convex/_generated/api';
 import ProfileHeader from '@/components/ProfileHeader';
+import { NoFitnessPlan } from '@/components/NoFitnessPlan';
 
 const ProfilePage = () => {
   const { user } = useUser();
