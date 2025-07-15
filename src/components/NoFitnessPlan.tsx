@@ -15,7 +15,11 @@ const NoFitnessPlan = () => {
         Start by creating a personalized fitness and diet plan tailored to your
         specific goals and needs
       </p>
-      <Button></Button>
+      <Button
+        size='lg'
+        asChild
+        className='relative overflow-hidden bg-primary text-primary-foreground px-8 py-6 text-lg font-medium'
+      ></Button>
     </div>
   );
 };
