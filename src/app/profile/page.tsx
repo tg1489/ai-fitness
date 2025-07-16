@@ -24,7 +24,10 @@ const ProfilePage = () => {
       <ProfileHeader user={user} />
 
       {allPlans && allPlans?.length > 0 ? (
-        <div>You got the plans</div>
+        <div className='space-y-8'>
+          {/* Plan Selector */}
+          <div className='relative backdrop-blur-sm border border-border p-6'></div>
+        </div>
       ) : (
         <NoFitnessPlan />
       )}
