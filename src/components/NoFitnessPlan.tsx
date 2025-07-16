@@ -22,7 +22,10 @@ const NoFitnessPlan = () => {
       ></Button>
 
       <Link href='/generate-program'>
-        <span className='relative flex items-center'></span>
+        <span className='relative flex items-center'>
+          Create Your First Plan
+          
+        </span>
       </Link>
     </div>
   );
