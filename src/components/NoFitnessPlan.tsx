@@ -20,6 +20,10 @@ const NoFitnessPlan = () => {
         asChild
         className='relative overflow-hidden bg-primary text-primary-foreground px-8 py-6 text-lg font-medium'
       ></Button>
+
+      <Link href='/generate-program'>
+        <span className='relative flex items-center'></span>
+      </Link>
     </div>
   );
 };
