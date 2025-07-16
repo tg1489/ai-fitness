@@ -29,6 +29,13 @@ const ProfilePage = () => {
           {/* Plan Selector */}
           <div className='relative backdrop-blur-sm border border-border p-6'>
             <CornerElements />
+
+            <div>
+              <h2>
+                <span></span>
+                <span></span>
+              </h2>
+            </div>
           </div>
         </div>
       ) : (
