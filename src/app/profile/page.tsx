@@ -6,6 +6,7 @@ import React from 'react';
 import { api } from '../../../convex/_generated/api';
 import ProfileHeader from '@/components/ProfileHeader';
 import { NoFitnessPlan } from '@/components/NoFitnessPlan';
+import CornerElements from '@/components/CornerElements';
 
 const ProfilePage = () => {
   const { user } = useUser();
@@ -26,7 +27,9 @@ const ProfilePage = () => {
       {allPlans && allPlans?.length > 0 ? (
         <div className='space-y-8'>
           {/* Plan Selector */}
-          <div className='relative backdrop-blur-sm border border-border p-6'></div>
+          <div className='relative backdrop-blur-sm border border-border p-6'>
+            <CornerElements />
+          </div>
         </div>
       ) : (
         <NoFitnessPlan />
